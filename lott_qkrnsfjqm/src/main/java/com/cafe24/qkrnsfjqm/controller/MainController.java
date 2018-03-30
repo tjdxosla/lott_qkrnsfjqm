@@ -18,7 +18,7 @@ public class MainController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 	
-	@RequestMapping(value = "/main/index", method = RequestMethod.GET)
+	@RequestMapping(value = "/main/", method = RequestMethod.GET)
 	public String mainIndex() throws IOException {
 
 		        String URL = "http://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=";

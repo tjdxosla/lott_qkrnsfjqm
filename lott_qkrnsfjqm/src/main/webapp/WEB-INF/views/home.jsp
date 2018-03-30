@@ -5,22 +5,9 @@
 <head>
 	<title>Home</title>
 	<script type="text/javascript">
-		document.location.href="/qkrnsfjqm/main/index";
+		document.location.href="/qkrnsfjqm/main/";
 	</script>
 </head>
 <body>
-<h1>
-	Hello world!  
-</h1>
-
-<P>  The time on the server is ${serverTime}. </P>
-<table>
-<c:forEach items="${users }" var="row">
-    <tr>
-        <td>${row.id }</td>
-        <td>${row.name }</td>
-    </tr>
-</c:forEach>
-</table>
 </body>
 </html>
