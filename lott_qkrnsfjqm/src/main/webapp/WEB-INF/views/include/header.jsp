@@ -22,9 +22,10 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="../resources/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
+
     <!-- Custom CSS -->
     <link href="../resources/css/stylish-portfolio.min.css" rel="stylesheet">
-
+    
   </head>
 
   <body id="page-top">
@@ -41,7 +42,8 @@
           <a class="js-scroll-trigger" href="<%=path %>/main/">Home</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="<%=path %>/member/join">회원가입</a>
+        	<a class="js-scroll-trigger" href="<%=path%>/member/login">로그인</a>
+          	<a class="js-scroll-trigger" href="<%=path%>/member/join">회원가입</a>  	
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#services">정밀분석</a>

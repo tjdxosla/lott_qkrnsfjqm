@@ -39,15 +39,17 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="../resources/vendor/jquery/jquery.min.js"></script>
-    <script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js'></script>
 
     <!-- Plugin JavaScript -->
     <script src="../resources/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="../resources/js/stylish-portfolio.min.js"></script>
-
+    <script src="../resources/js/memberJoin.js"></script>
+    
   </body>
-
 </html>
  
