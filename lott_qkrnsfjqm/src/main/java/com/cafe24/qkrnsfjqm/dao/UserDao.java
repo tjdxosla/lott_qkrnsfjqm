@@ -1,5 +1,6 @@
 package com.cafe24.qkrnsfjqm.dao;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -17,6 +18,12 @@ public class UserDao {
 	public List<UsersDto> getUsers() throws Exception {
 		// TODO Auto-generated method stub
 		return sqlSession.selectList("users.getUsers");
+	}
+
+	public int insertUser(HashMap<String, Object> memParam) {
+		// TODO Auto-generated method stub
+		
+		return sqlSession.insert("users.insertUsers", memParam);
 	}	 
 
 }

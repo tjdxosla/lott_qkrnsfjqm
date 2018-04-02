@@ -1,5 +1,6 @@
 package com.cafe24.qkrnsfjqm.service;
 
+import java.util.HashMap;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -22,6 +23,13 @@ public class UsersImple implements UsersService {
 	public List<UsersDto> getUsers() throws Exception {
 		// TODO Auto-generated method stub
 		return usersDao.getUsers();
+	}
+
+	@Override
+	public int insertUser(HashMap<String, Object> memParam) {
+		// TODO Auto-generated method stub
+		
+		return usersDao.insertUser(memParam);
 	}
 
 }

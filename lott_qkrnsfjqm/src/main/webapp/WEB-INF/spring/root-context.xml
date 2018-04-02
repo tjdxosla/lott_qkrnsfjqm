@@ -15,12 +15,12 @@
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://qkrnsfjqm.cafe24.com:3306/qkrnsfjqm"></property>
+		<!--<property name="url" value="jdbc:mysql://qkrnsfjqm.cafe24.com:3306/qkrnsfjqm"></property>
 		<property name="username" value="qkrnsfjqm"></property>
-		<property name="password" value="tjdxosla1!"></property>		
-		<!--<property name="url" value="jdbc:mysql://localhost:3306/mylaravel"></property>
+		<property name="password" value="tjdxosla1!"></property>		-->
+		<property name="url" value="jdbc:mysql://localhost:3306/mylaravel"></property>
 		<property name="username" value="homestead"></property>
-		<property name="password" value="qwer1234"></property>	-->
+		<property name="password" value="qwer1234"></property>	
 	</bean>
 	
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"> 

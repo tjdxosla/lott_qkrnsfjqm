@@ -1,15 +1,15 @@
 package com.cafe24.qkrnsfjqm.dto;
 
+import java.util.HashMap;
+
 public class UsersDto {
 	
 	private int id;
 	private String name;
 	private String email;
-	private String password;
-	private String created_at;
-	private String updated_at;
-	private String remember_token;
-
+	private String pass;
+	private String phone;
+	
 	public int getId() {
 		return id;
 	}
@@ -28,32 +28,17 @@ public class UsersDto {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getPassword() {
-		return password;
+	public String getPass() {
+		return pass;
 	}
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPass(String pass) {
+		this.pass = pass;
 	}
-	public String getCreated_at() {
-		return created_at;
+	public String getPhone() {
+		return phone;
 	}
-	public void setCreated_at(String created_at) {
-		this.created_at = created_at;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
-	public String getUpdated_at() {
-		return updated_at;
-	}
-	public void setUpdated_at(String updated_at) {
-		this.updated_at = updated_at;
-	}
-	public String getRemember_token() {
-		return remember_token;
-	}
-	public void setRemember_token(String remember_token) {
-		this.remember_token = remember_token;
-	}
-	
-	
-	
 
 }

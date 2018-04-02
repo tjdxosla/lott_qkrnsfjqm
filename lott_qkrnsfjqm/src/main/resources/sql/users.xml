@@ -6,6 +6,11 @@
     <!-- id의 경우에는 Mapper.java에 동일하게 사용해야된다. -->
     <select id="getUsers" resultType="com.cafe24.qkrnsfjqm.dto.UsersDto">
         SELECT * FROM users
-    </select>       
+    </select> 
+    
+    <insert id="insertUsers" parameterType="HashMap">
+    	insert into users(name, email, password, phone, created_at, updated_at)
+    	values(#{name}, #{email}, #{pass}, #{phone}, #{created_at}, #{updated_at})
+    </insert>      
  
 </mapper>
