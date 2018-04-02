@@ -4,5 +4,4 @@
 	alert("${msg}");
 	document.location.href = "/qkrnsfjqm/main/";
 </script>
-asdfasfd
 <%@ include file="../include/footer.jsp" %>
