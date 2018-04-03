@@ -53,8 +53,12 @@
           <a class="js-scroll-trigger" href="#portfolio">구매대행</a>
         </li>
         <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="<%=path%>/freeBoard/list">자유 게시판</a>
+        </li>         
+        <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#contact">관리자에게 문의하기</a>
         </li>
+       
       </ul>
     </nav>
 
