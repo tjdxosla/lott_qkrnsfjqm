@@ -32,4 +32,7 @@
 		delete from board where id = #{id}
 	</delete>
 
+	<update id="updateHit">
+		update board set hit = #{hit} where id=#{id}
+	</update>
 </mapper>

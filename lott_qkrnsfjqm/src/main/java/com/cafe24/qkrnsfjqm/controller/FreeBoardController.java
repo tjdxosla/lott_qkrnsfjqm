@@ -76,10 +76,12 @@ public class FreeBoardController {
 	@RequestMapping(value="/freeBoard/view")
 	public ModelAndView freeBoardView(HttpServletRequest req) {
 		
+		
+		
 		ModelAndView mav = new ModelAndView();
 		
 		String id = req.getParameter("id");
-		
+		updateHit(id);
 		HashMap<String, Object> view = boardService.getView(id);
 		
 		mav.addObject("view", view);
@@ -141,6 +143,22 @@ public class FreeBoardController {
 		mav.setViewName("/freeBoard/delete");
 		
 		return mav;
+		
+	}
+	
+	public void updateHit(String id) {
+		
+		HashMap<String, Object> view = boardService.getView(id);
+		HashMap<String, Object> hitMap = new HashMap<String, Object>();		
+		
+		int updateHit = Integer.parseInt(view.get("hit")+"")+1;
+		
+		hitMap.put("hit", updateHit);
+		hitMap.put("id", id);
+
+		boardService.updateHit(hitMap);
+
+		
 		
 	}
 

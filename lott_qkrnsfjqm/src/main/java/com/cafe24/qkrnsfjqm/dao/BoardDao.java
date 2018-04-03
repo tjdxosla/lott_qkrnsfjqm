@@ -51,4 +51,9 @@ public class BoardDao {
 		// TODO Auto-generated method stub
 		return sqlSession.delete("board.delete", deleteMap);
 	}
+
+	public void updateHit(HashMap<String, Object> hitMap) {
+		// TODO Auto-generated method stub
+		sqlSession.update("board.updateHit", hitMap);
+	}
 }

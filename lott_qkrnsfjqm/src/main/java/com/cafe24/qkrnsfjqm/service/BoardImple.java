@@ -45,6 +45,14 @@ public class BoardImple implements BoardService{
 		return boardDao.delete(deleteMap);
 	}
 
+	@Override
+	public void updateHit(HashMap<String, Object> hitMap) {
+		// TODO Auto-generated method stub
+		boardDao.updateHit(hitMap);
+	}
+
+
+
 
 
 }

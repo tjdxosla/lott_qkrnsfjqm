@@ -16,4 +16,6 @@ public interface BoardService {
 
 	int delete(HashMap<String, Object> deleteMap);
 
+	void updateHit(HashMap<String, Object> hitMap);
+
 }
