@@ -5,7 +5,7 @@
 <head>
 	<title>Home</title>
 	<script type="text/javascript">
-		document.location.href="/qkrnsfjqm/main/";
+		document.location.href="/main/";
 	</script>
 </head>
 <body>

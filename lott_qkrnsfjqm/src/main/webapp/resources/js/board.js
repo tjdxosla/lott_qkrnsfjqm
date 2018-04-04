@@ -29,7 +29,7 @@ function validation(){
 	}
 
 	frm.method="POST";
-	frm.action="/qkrnsfjqm/freeBoard/insertWrite";
+	frm.action="/freeBoard/insertWrite";
 	frm.submit();	
 }
 
@@ -61,14 +61,14 @@ function editValidation(){
 	}
 
 	frm.method="POST";
-	frm.action="/qkrnsfjqm/freeBoard/updateEdit";
+	frm.action="/freeBoard/updateEdit";
 	frm.submit();	
 }
 
 function deleteView(id) {
 	
 	if(confirm("삭제하시겠습니까?")==true){
-		document.location.href="/qkrnsfjqm/freeBoard/delete?id="+id;
+		document.location.href="/freeBoard/delete?id="+id;
 	}
 	
 	

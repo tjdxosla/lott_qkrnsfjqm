@@ -2,6 +2,6 @@
 <%@ include file="../include/header.jsp" %>
 <script type="text/javascript">
 	alert("${msg}");
-	document.location.href = "/qkrnsfjqm/main/";
+	document.location.href = "/main/";
 </script>
 <%@ include file="../include/footer.jsp" %>
