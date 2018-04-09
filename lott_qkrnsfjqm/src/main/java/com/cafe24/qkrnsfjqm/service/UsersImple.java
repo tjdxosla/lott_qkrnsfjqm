@@ -1,9 +1,12 @@
 package com.cafe24.qkrnsfjqm.service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
@@ -31,5 +34,19 @@ public class UsersImple implements UsersService {
 		
 		return usersDao.insertUser(memParam);
 	}
+
+	@Override
+	public HashMap<String, Object> selectUser(HashMap<String, Object> params) {
+		// TODO Auto-generated method stub
+		
+		return usersDao.selectUser(params);
+	}
+
+
+
+
+
+
+
 
 }

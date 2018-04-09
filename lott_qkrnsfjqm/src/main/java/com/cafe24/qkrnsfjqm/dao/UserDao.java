@@ -1,7 +1,11 @@
 package com.cafe24.qkrnsfjqm.dao;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +28,15 @@ public class UserDao {
 		// TODO Auto-generated method stub
 		
 		return sqlSession.insert("users.insertUsers", memParam);
-	}	 
+	}
+
+	public HashMap<String, Object> selectUser(HashMap<String, Object> params) {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne("users.selectUser", params);
+	}
+
+
+
+
 
 }

@@ -11,6 +11,14 @@
     <insert id="insertUsers" parameterType="HashMap">
     	insert into users(name, email, password, phone, created_at, updated_at)
     	values(#{name}, #{email}, #{pass}, #{phone}, #{created_at}, #{updated_at})
-    </insert>      
+    </insert>
+    
+    <select id="selectUser" parameterType="HashMap" resultType="HashMap">
+    	select *
+    	from users
+    	where email = #{email}
+    	and password = #{pass}
+    	
+    </select>      
  
 </mapper>

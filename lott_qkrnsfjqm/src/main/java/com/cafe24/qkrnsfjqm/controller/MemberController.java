@@ -2,11 +2,14 @@ package com.cafe24.qkrnsfjqm.controller;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,7 +42,7 @@ public class MemberController {
 		String dayTime = sdf.format(dat);	
 
 		if(check==null) {
-			System.out.println("이제는 : "+check);
+			
 			mav.setViewName("/member/join");
 		}else {
 			String name = req.getParameter("username");
@@ -70,5 +73,44 @@ public class MemberController {
 	public String memberInserResult() {
 		
 		return "/member/insertResult";
+	}
+	
+	@RequestMapping(value="/member/login")
+	public String memberLogin( ) {
+		
+		return "/member/login";
+	}
+	
+	@RequestMapping(value="/member/loginProc")
+	public ModelAndView memberLoginProc(HttpServletRequest req, HttpSession session) {
+		
+		ModelAndView mav = new ModelAndView();
+		HashMap<String, Object> params = new HashMap<String, Object>();
+		HashMap<String, Object> result = new HashMap<String, Object>();
+		
+		params.put("email", req.getParameter("email"));
+		params.put("pass", req.getParameter("pass"));
+		
+		result = usersService.selectUser(params);	
+		
+		try {			
+		
+			if(result!=null) {
+				session.setAttribute("email", result.get("email"));
+				
+				mav.addObject("result", result);
+				mav.setViewName("/member/loginProc");
+	
+			}else {
+				session.setAttribute("email", "");
+				
+				mav.addObject("msg", "회원정보가 없습니다.");
+				mav.setViewName("/member/loginProc");
+			
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return mav;
 	}
 }
