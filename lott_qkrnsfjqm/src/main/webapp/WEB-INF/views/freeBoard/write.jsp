@@ -2,7 +2,7 @@
 <%@ include file="../include/header.jsp" %>
 <script src="../resources/js/board.js"></script>
 <div class="container">
-   <form name="fBoard" onSubmit="return validation();">
+   <form name="fBoard" onSubmit="return validation();" enctype="multipart/form-data">
    <input type="hidden" name="check" value="n" />
       <div class="form-group">
          <label for="name">이름:</label>
@@ -20,6 +20,10 @@
          <label for="comment">Comment:</label>
          <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
       </div>
+	<div class="form-group">
+		<label for="exampleFormControlFile1">파일 업로드</label>
+		<input type="file" class="form-control-file" id="file" name="file">
+	</div>      
       <button type="submit" class="btn btn-default" >확인</button>
       <button type="reset" class="btn btn-default">다시쓰기</button>
    </form>

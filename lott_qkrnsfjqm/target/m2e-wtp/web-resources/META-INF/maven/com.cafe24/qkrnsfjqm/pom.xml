@@ -171,6 +171,18 @@
 		</dependency>
 		
 		<!-- Spring Security 사용을 위한 dependency 등록 End -->	
+		
+        <!-- file upload -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.4</version>
+        </dependency>		
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
